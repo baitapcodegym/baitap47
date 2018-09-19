@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>validate</title>
+</head>
+<body>
+<input type="text" id="check">
+<input type="button" value="Submit" onclick="isValidateEmail()">
+<script>
+    function isValidateEmail() {
+        let str = document.getElementById('check').value;
+        let paterm = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (paterm.test(str) === true) {
+            alert("Email Validate");
+        } else {
+            alert("Email Not Validate");
+        }
+    }
+
+</script>
+</body>
+< /html>
